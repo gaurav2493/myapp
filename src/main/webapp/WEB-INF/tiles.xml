@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="/WEB-INF/jsp/categories.jsp" />
+		<put-attribute name="contentsection" value="/WEB-INF/jsp/contentsection.jsp" />
+		<put-attribute name="discounts" value="/WEB-INF/jsp/discounts.jsp" />
+		<put-attribute name="gallery" value="/WEB-INF/jsp/gallery.jsp" />
+		<put-attribute name="header_bar" value="/WEB-INF/jsp/header_bar.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="products" value="" />
+		<put-attribute name="categories" value="/WEB-INF/jsp/categories.jsp" />
+		<put-attribute name="login" value="/WEB-INF/jsp/signin.jsp" />
+	</definition>
+
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="products" value="/WEB-INF/jsp/products.jsp" />
+	</definition>
+	<definition name="admin" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="products" value="/WEB-INF/jsp/hello.jsp" />
+	</definition>
+
+</tiles-definitions>
