@@ -34,6 +34,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
+		<tomcat.dbcp.version>7.0.27</tomcat.dbcp.version>
 	</properties>
 <dependencies>
 	    <dependency>
@@ -168,7 +169,13 @@
 	<groupId>org.slf4j</groupId>
 	<artifactId>slf4j-log4j12</artifactId>
 	<version>1.5.6</version>
-</dependency>        
+</dependency>   
+<!-- Tomcat JDBC -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+	      <artifactId>tomcat-jdbc</artifactId>
+	      <version>${tomcat.dbcp.version}</version>
+	  </dependency>      
 	</dependencies>
 	<profiles>
 		<profile>
